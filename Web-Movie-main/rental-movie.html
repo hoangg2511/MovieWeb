@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Movie-series.css" />
     <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
     <script src="data-rental.js"></script>
     <!-- Tải dữ liệu trước -->
     <script src="script-rental.js"></script>
@@ -19,7 +21,7 @@
     <!------------------------------------------------------------------Menu-------------------------------------------------->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="PLAYCINE Logo">
+          <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
         </div>
         <nav>
             <ul>
@@ -33,27 +35,58 @@
                 <input type="text" placeholder="What are you looking for">
             </div>
             <div class="icons">
-                <span>🔔</span>
-                <span>👤</span>
+              <img src="./image/icons8-notification-30.png" alt="">
+              <img src="./image/icons8-user-30.png" alt="">        
             </div>
         </nav>
     </header>
 <!----------------------------------------------------------------------Banner----------------------------------------------------------->
-    <section class="banner">
-        <div class="slider">
-            <div class="slide slide5">
-                <div class="slide-content">
-                    <div class="slide-title">GALACTIC CONVERGENCE</div>
-                    <div class="slide-description">In the midst of a cataclysmic extraterrestrial invasion, a diverse
-                        group of unlikely heroes must unite to face an unstoppable onslaught...</div>
-                    <div class="buttons">
-                        <button class="play-btn">▶ Play</button>
-                        <button class="info-btn">More info</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="banner">    
+  <div class="slider">
+      <div class="slide slide1">
+          <div class="slide-content">
+              <div class="slide-title">Ghost Cat is indulgent</div>
+              <div class="slide-description">Một chú mèo tinh nghịch vô tình lạc vào thế giới phép thuật và phải tìm cách trở về nhà....</div>
+              <div class="buttons">
+                  <button class="play-btn">▶ Play</button>
+                  <button class="info-btn">More info</button>
+              </div>
+          </div>
+      </div>
+      <div class="slide slide2">
+          <div class="slide-content">
+              <div class="slide-title">Blade Runner</div>
+              <div class="slide-description">Một người Blade Runner trẻ tuổi phát hiện ra một bí mật có thể thay đổi toàn bộ xã hội....</div>
+              <div class="buttons">
+                  <button class="play-btn">▶ Play</button>
+                  <button class="info-btn">More info</button>
+              </div>
+          </div>
+      </div>
+      <div class="slide slide3">
+          <div class="slide-content">
+              <div class="slide-title">Conan - Kho Báu Dưới Đáy Đại Dương</div>
+              <div class="slide-description">Conan và nhóm bạn khám phá bí ẩn của một kho báu bị chôn vùi dưới đáy đại dương....</div>
+              <div class="buttons">
+                  <button class="play-btn">▶ Play</button>
+                  <button class="info-btn">More info</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="progress-bar">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+  </div>
+  <div class="nav-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+  </div>
+  <div class="fade">
+
+  </div>
+</section>
     <!-------------------------------------------------------------------Movie-List-------------------------------------------------------->
 </section>
 <main>

@@ -200,19 +200,13 @@ body {
   border-radius: 30px;
 }
 .slide1 {
-  background-image: url("./Web-Movie-main/img/banner/banner_1.jpg");
+  background-image: url("./image/PhimLe_ThieuNhi/ThieuNhi/background_MeoMa.png");
 }
 .slide2 {
-  background-image: url("./Web-Movie-main/img/banner/banner_2.jpg");
+  background-image: url("./image/PhimLe_ThieuNhi/PhimLe/background_BladeRunner.webp");
 }
 .slide3 {
-  background-image: url("./Web-Movie-main/img/banner/banner_3.jpg");
-}
-.slide4 {
-  background-image: url("./Web-Movie-main/img/banner/banner_4.jpg");
-}
-.slide5 {
-  background-image: url("./Web-Movie-main/img/banner/banner_5.jpg");
+  background-image: url("./image/PhimLe_ThieuNhi/ThieuNhi/");
 }
 .slide::after {
   content: "";

@@ -1,5 +1,5 @@
 const moviesData = {
-    "rental1": {
+    "rental19": {
         title: "The Hunger Games",
         rating: 4.7,
         duration: "2h 22min",
@@ -9,10 +9,10 @@ const moviesData = {
         cast: ["Jennifer Lawrence", "Josh Hutcherson"],
         genre: ["Hành Động", "Phiêu Lưu"],
         production: "Lionsgate",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_1_theHunger.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_theHunger.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_1_theHunger.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_theHunger.webp"
     },
-    "rental2": {
+    "rental20": {
         title: "Blade Runner 2049",
         rating: 4.8,
         duration: "2h 44min",
@@ -22,10 +22,10 @@ const moviesData = {
         cast: ["Ryan Gosling", "Harrison Ford"],
         genre: ["Khoa Học Viễn Tưởng", "Hành Động"],
         production: "Warner Bros.",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_2_BladeRunner.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BladeRunner.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_2_BladeRunner.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BladeRunner.webp"
     },
-    "rental3": {
+    "rental21": {
         title: "Zone 414",
         rating: 4.5,
         duration: "1h 38min",
@@ -35,10 +35,10 @@ const moviesData = {
         cast: ["Guy Pearce", "Matilda Lutz"],
         genre: ["Hành Động", "Bí Ẩn"],
         production: "Saban Films",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_3_Zone.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Zone.webp"
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Zone.webp",
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_3_Zone.webp"
     },
-    "rental4": {
+    "rental22": {
         title: "Hana Bí Ẩn",
         rating: 4.6,
         duration: "1h 45min",
@@ -48,10 +48,10 @@ const moviesData = {
         cast: ["Haruka Ayase", "Takeru Satoh"],
         genre: ["Kinh Dị", "Huyền Bí"],
         production: "Toho Company",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_4_Hanna.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Hanna.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_4_Hanna.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Hanna.webp"
     },
-    "rental5": {
+    "rental23": {
         title: "Điệp Viên XXX",
         rating: 4.7,
         duration: "2h 4min",
@@ -61,10 +61,10 @@ const moviesData = {
         cast: ["Vin Diesel", "Asia Argento"],
         genre: ["Hành Động", "Phiêu Lưu"],
         production: "Revolution Studios",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_5_DiepVien.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_DiepVien.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_5_DiepVien.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_DiepVien.webp"
     },
-    "rental6": {
+    "rental24": {
         title: "Hỏa Ngục Inferno",
         rating: 4.6,
         duration: "2h 1min",
@@ -74,10 +74,10 @@ const moviesData = {
         cast: ["Tom Hanks", "Felicity Jones"],
         genre: ["Bí Ẩn", "Hành Động"],
         production: "Columbia Pictures",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_6_HoaNguc.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_HoaNguc.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_6_HoaNguc.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_HoaNguc.webp"
     },
-    "rental7": {
+    "rental25": {
         title: "Bàn Tay Diệt Quỷ",
         rating: 4.5,
         duration: "1h 55min",
@@ -87,10 +87,10 @@ const moviesData = {
         cast: ["Park Seo-joon", "Woo Do-hwan"],
         genre: ["Kinh Dị", "Hành Động"],
         production: "Lotte Entertainment",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_7_BanTayDQ.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BanTayDQ.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_7_BanTayDQ.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BanTayDQ.webp"
     },
-    "rental8": {
+    "rental26": {
         title: "Pawn: Cục Nợ Hóa Cục Cưng",
         rating: 4.6,
         duration: "1h 53min",
@@ -100,10 +100,10 @@ const moviesData = {
         cast: ["Sung Dong-il", "Ha Ji-won"],
         genre: ["Tâm Lý", "Gia Đình"],
         production: "CJ Entertainment",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_8_Pawn.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Pawn.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_8_Pawn.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Pawn.webp"
     },
-    "rental9": {
+    "rental27": {
         title: "Thiếu Gia Kỹ Phường",
         rating: 4.3,
         duration: "1h 50min",
@@ -113,10 +113,10 @@ const moviesData = {
         cast: ["Ngô Kiến Huy", "Khả Như"],
         genre: ["Hài Hước", "Tình Cảm"],
         production: "CJ Entertainment",
-        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_9_TGKP.webp",
-        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TGKP.webp"
+        background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_9_TGKP.webp",
+        background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TGKP.webp"
     },
-    "rental10": {
+    "rental28": {
     title: "Thám Tử Hong Gil Dong",
     rating: 4.3,
     duration: "2h 5min",
@@ -126,10 +126,10 @@ const moviesData = {
     cast: ["Lee Je-hoon", "Go Ara"],
     genre: ["Hành Động", "Trinh Thám"],
     production: "CJ Entertainment",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_10_TTHGD.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TTHGD.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_10_TTHGD.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TTHGD.webp"
 },
-"rental11": {
+"rental29": {
     title: "Along with the Gods: The Two Worlds",
     rating: 4.8,
     duration: "2h 19min",
@@ -139,10 +139,10 @@ const moviesData = {
     cast: ["Ha Jung-woo", "Cha Tae-hyun"],
     genre: ["Hành Động", "Giả Tưởng"],
     production: "Lotte Entertainment",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_11_Along.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Along.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_11_Along.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Along.webp"
 },
-"rental12": {
+"rental30": {
     title: "Dog Dog Days: Sen Boss Sum Vầy",
     rating: 4.2,
     duration: "1h 45min",
@@ -152,10 +152,10 @@ const moviesData = {
     cast: ["Diễn viên C", "Diễn viên D"],
     genre: ["Hài Hước", "Gia Đình"],
     production: "Hãng Phim Pet Lover",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_12_DogDay.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_DogDay.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_12_DogDay.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_DogDay.webp"
 },
-"rental13": {
+"rental31": {
     title: "Bóng Ma Phantom",
     rating: 4.6,
     duration: "2h 10min",
@@ -165,10 +165,10 @@ const moviesData = {
     cast: ["Sol Kyung-gu", "Lee Hanee"],
     genre: ["Hành Động", "Trinh Thám"],
     production: "CJ Entertainment",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_13_BongMa.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BongMa.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_13_BongMa.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BongMa.webp"
 },
-"rental14": {
+"rental32": {
     title: "Master: Ông Trùm",
     rating: 4.7,
     duration: "2h 15min",
@@ -178,10 +178,10 @@ const moviesData = {
     cast: ["Lee Byung-hun", "Kang Dong-won"],
     genre: ["Hành Động", "Tội Phạm"],
     production: "CJ Entertainment",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_14_Master.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Master.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_14_Master.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_Master.webp"
 },
-"rental15": {
+"rental33": {
     title: "White Snake: Bạch Xà Duyên Khởi",
     rating: 4.5,
     duration: "1h 39min",
@@ -191,10 +191,10 @@ const moviesData = {
     cast: ["Zhang Zhe", "Yang Tianxiang"],
     genre: ["Hoạt Hình", "Giả Tưởng"],
     production: "Light Chaser Animation Studios",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_15_WhiteSnake.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_WhiteSnake.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_15_WhiteSnake.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_WhiteSnake.webp"
 },
-"rental16": {
+"rental34": {
     title: "Bùa Hình Nhân Hoon Payon",
     rating: 4.2,
     duration: "1h 50min",
@@ -204,10 +204,10 @@ const moviesData = {
     cast: ["Mario Maurer", "Yaya Urassaya"],
     genre: ["Kinh Dị", "Tâm Linh"],
     production: "GDH 559",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_16_BuaHinhNhan.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BuaHinhNhan.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_16_BuaHinhNhan.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_BuaHinhNhan.webp"
 },
-"rental17": {
+"rental35": {
     title: "I Did It My Way: Tiềm Hành",
     rating: 4.3,
     duration: "2h 3min",
@@ -217,10 +217,10 @@ const moviesData = {
     cast: ["Andy Lau", "Eddie Peng"],
     genre: ["Hành Động", "Tội Phạm"],
     production: "Emperor Motion Pictures",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_17_TiemHanh.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TiemHanh.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_17_TiemHanh.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_TiemHanh.webp"
 },
-"rental18": {
+"rental36": {
     title: "Monster Hunter: Thợ Săn Quái Thú",
     rating: 4.0,
     duration: "1h 43min",
@@ -230,7 +230,7 @@ const moviesData = {
     cast: ["Milla Jovovich", "Tony Jaa"],
     genre: ["Hành Động", "Giả Tưởng"],
     production: "Screen Gems",
-    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_18_MonstrerHunter.webp",
-    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_MonstrerHunter.webp"
+    background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_18_MonstrerHunter.webp",
+    background: "/Web-Movie-main/image/PhimLe_ThieuNhi/PhimLe/background_MonstrerHunter.webp"
 }
 };

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+        <link rel="stylesheet" href="Movie-series.css">
     <title>Movie Listing</title>
 
 </head>
@@ -15,7 +16,7 @@
     <!------------------------------------------------Menu-------------------------------->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="PLAYCINE Logo">
+            <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
         </div>
         <nav>
             <ul>
@@ -27,14 +28,15 @@
             </ul>
 
             <div class="icons">
-                <span>🔔</span>
-                <span>👤</span>
+     <img src="./image/icons8-notification-30.png" alt="">
+     <img src="./image/icons8-user-30.png" alt="">           
             </div>
         </nav>
     </header>
 <!-----------------------------------------------Search bar-------------------------------------------->
     <section class="banner">
-        <div class="slide slide4">
+        <div class="slide">
+            <img src="/Web-Movie-main/img/banner/banner_4.jpg" alt="">
             <div class="text-container">
                 <h2>Discover The Perfect Film </h2>
                 <h2>With Effortless Search And Selection</h2>
@@ -65,27 +67,16 @@
                 <h3>Top Rates</h3>
                 <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
                     <div class="movie-list">
-                        <div class="movie1" data-genre="Hành động" data-id="1">
+                        <div class="movie1">
                             <img src="img/trending_now/trending_now_1.jpg" alt="Movie 1">
                             <div class="movie-overlay">
-                                <div class="movie-buttons">
-                                    <button class="play-btn" onclick="redirectToDetails(1)">▶</button>
-                                    <button class="favorite-btn">♡</button>
-                                    <button class="info-btn" onclick="redirectToDetails(1)">ℹ</button>
-                                </div>
                                 <h3>Công Lý "Ngủ Quên"</h3>
                                 <p>Tóm tắt phim...</p>
-                                <span class="movie-genre">Hành động</span> <!-- Hiển thị thể loại phim -->
                             </div>
                         </div>
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_2.png" alt="Movie 2">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -93,11 +84,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_3.jpg" alt="Movie 3">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -106,11 +92,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_4.jpg" alt="Movie 4">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -118,11 +99,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_5.jpg" alt="Movie 5">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -130,11 +106,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_1.jpg" alt="Movie 6">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -142,11 +113,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_2.png" alt="Movie 7">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -154,11 +120,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_3.jpg" alt="Movie 8">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -166,11 +127,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_4.jpg" alt="Movie 9">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -178,11 +134,6 @@
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_5.jpg" alt="Movie 10">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -191,6 +142,8 @@
                 </div>
                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
+        </section>
+        <section class="movie-section">
             <div class="movie-category">
                 <h3>New Release</h3>
                 <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
@@ -198,11 +151,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_1.png" alt="Movie 1">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -210,11 +158,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_2.png" alt="Movie 2">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -222,11 +165,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_3.png" alt="Movie 3">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -234,11 +172,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_4.png" alt="Movie 4">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -246,11 +179,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_5.png" alt="Movie 5">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -258,11 +186,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_1.png" alt="Movie 6">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -270,11 +193,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_2.png" alt="Movie 7">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -282,11 +200,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_3.png" alt="Movie 8">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -294,11 +207,6 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_4.png" alt="Movie 9">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -306,18 +214,15 @@
                     <div class="movie1">
                         <img src="./img/the_abyss/abyss_5.png" alt="Movie 10">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
                     </div>
                 </div>
-                <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
+        </section>
+        <section class="movie-section">
             <div class="movie-category">
                 <h3>Trending Now</h3>
                 <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
@@ -325,11 +230,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_1.png" alt="Movie 1">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -337,11 +237,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_2.png" alt="Movie 2">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -349,11 +244,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_3.png" alt="Movie 3">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -362,11 +252,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_4.png" alt="Movie 4">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -374,11 +259,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_5.png" alt="Movie 5">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -386,11 +266,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_1.png" alt="Movie 6">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -398,11 +273,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_2.png" alt="Movie 7">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -410,11 +280,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_3.png" alt="Movie 8">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -422,11 +287,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_4.png" alt="Movie 9">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -434,11 +294,6 @@
                     <div class="movie1">
                         <img src="img/continue_watching/continue_watching_5.png" alt="Movie 10">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -447,6 +302,8 @@
                 </div>
                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
+        </section>
+        <section class="movie-section">
             <div class="movie-category">
                 <h3>Recommended for you</h3>
                 <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
@@ -454,11 +311,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_1.png" alt="Movie 1">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -466,24 +318,13 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_2.png" alt="Movie 2">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
-
                     </div>
                     <div class="movie1">
                         <img src="./img/popular/popular_3.png" alt="Movie 3">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -492,11 +333,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_4.png" alt="Movie 4">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -505,11 +341,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_5.png" alt="Movie 5">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -518,11 +349,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_1.png" alt="Movie 6">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -531,11 +357,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_2.png" alt="Movie 7">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -544,11 +365,6 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_3.png" alt="Movie 8">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -557,160 +373,13 @@
                     <div class="movie1">
                         <img src="./img/popular/popular_4.png" alt="Movie 9">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
-
                     </div>
                     <div class="movie1">
                         <img src="./img/popular/popular_5.png" alt="Movie 10">
                         <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
-            </div>
-    <!----------------------------------------------Popular--------------------------------->
-            <div class="movie-category">
-                <h3>Popular</h3>
-                <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-                <div class="movie-list">
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_1.png" alt="Movie 1">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_2.png" alt="Movie 2">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_3.png" alt="Movie 3">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_4.png" alt="Movie 4">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_5.png" alt="Movie 5">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_1.png" alt="Movie 6">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_2.png" alt="Movie 7">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_3.png" alt="Movie 8">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_4.png" alt="Movie 9">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_5.png" alt="Movie 10">
-                        <div class="movie-overlay">
-                            <div class="movie-buttons">
-                                <button class="play-btn">▶</button>
-                                <button class="favorite-btn">♡</button>
-                                <button class="info-btn">ℹ</button>
-                            </div>
                             <h3>Công Lý "Ngủ Quên"</h3>
                             <p>Tóm tắt phim...</p>
                         </div>
@@ -719,6 +388,93 @@
                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
         </section>
+    <!----------------------------------------------Popular--------------------------------->
+            <div class="movie-category">
+                <h3>Popular</h3>
+                <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+                <div class="movie-list">
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_1.png" alt="Movie 1">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_2.png" alt="Movie 2">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_3.png" alt="Movie 3">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_4.png" alt="Movie 4">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_5.png" alt="Movie 5">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_1.png" alt="Movie 6">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_2.png" alt="Movie 7">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_3.png" alt="Movie 8">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_4.png" alt="Movie 9">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+
+                    </div>
+                    <div class="movie3">
+                        <img src="./img/thriller/thriller_5.png" alt="Movie 10">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+            </div>
+        
 
     </main>
 
