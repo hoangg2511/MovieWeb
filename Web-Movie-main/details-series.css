@@ -1,106 +1,107 @@
 * {
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background: #000000;
-    color: rgb(255, 255, 255);
-    display: flex;
-    height: auto;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  display: flex;
+  height: auto;
 }
 
 /* Định dạng Background */
 .movie-background {
-    position: absolute;
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1; /* Đưa background xuống dưới */
-    
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Đưa background xuống dưới */
 }
 
 /* Container để căn giữa nội dung */
 .movie-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Căn giữa theo cả chiều ngang và dọc */
-    height: 80vh;
-    position: relative;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Căn giữa theo cả chiều ngang và dọc */
+  height: 80vh;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 /* Nội dung phim */
 .movie-content {
-    
-    font-size: 30px;
-    width: 100%;
-    padding: 50px;
-    border-radius: 10px;
+  font-size: 30px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
 }
-.movie-content h1{
-    margin-bottom: 30px;
+.movie-content h1 {
+  margin-bottom: 30px;
 }
-.movie-content p{
-    width: 40%;
+.movie-content p {
+  width: 40%;
 }
 /* Danh sách tập phim */
 .episodes-list {
-    background-color: #000000e5;
-    position: absolute; /* Đặt tập phim dưới background */
-    top: 100%; /* Đẩy xuống bên dưới */
-    display: flex;
-    gap: 15px;
-    width: auto;
-    padding: 20px;
-    z-index: 1; /* Hiển thị trên background */
+  background-color: #000000e5;
+  position: absolute; /* Đặt tập phim dưới background */
+  top: 100%; /* Đẩy xuống bên dưới */
+  display: flex;
+  gap: 15px;
+  width: auto;
+  padding: 20px;
+  z-index: 1; /* Hiển thị trên background */
 }
 
 .episode {
-    width: 200px;
-    background: #97979754;
-    padding: 10px;
-    border-radius: 8px;
+  width: 200px;
+  background: #97979754;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .episode img {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
 }
 .buttons {
-    
-    margin-right: 77%;
-    margin-top: -1%;
-    z-index: 20;
-  }
-  .buttons button {
-    width: 150px;
-    height: 50px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-  .play-btn {
-    background-color: rgb(255, 0, 0);
-    color: white;
-    z-index: 20;
-  }
-  .info-btn {
-    background-color: gray;
-    color: white;
-  }
-  /*episode*/
-  /* Tổng thể danh sách tập */
+  margin-right: 77%;
+  margin-top: -1%;
+  z-index: 20;
+}
+.buttons button {
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.play-btn {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  z-index: 20;
+}
+.info-btn {
+  background-color: gray;
+  color: white;
+}
+/*episode*/
+/* Tổng thể danh sách tập */
 .episodes-list {
   display: grid;
   grid-template-columns: repeat(8, 1fr); /* 9 tập mỗi hàng */
