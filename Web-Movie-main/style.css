@@ -431,9 +431,42 @@ nav ul li a {
   opacity: 1;
   transform: translateY(0);
 }
+.user-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
+.user-menu {
+  position: absolute;
 
-  
+  top: 40px;
+  right: 0;
+  background-color: #262323;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  height: 100px;
+  display: none;
+  z-index: 100;
+}
 
+.user-menu p a {
+  gap: 10px;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
 
+.user-menu p:hover {
+  border-radius: 5px;
+  background: #413c3c;
+}
 
+/* Khi hover vào user-container thì menu sẽ hiện lên */
+.user-container:hover .user-menu {
+  display: block;
+}

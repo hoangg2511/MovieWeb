@@ -56,3 +56,23 @@ window.addEventListener("scroll", function () {
     navbar.style.background = "rgba(0, 0, 0, 0.26)"; // Trong suốt khi ở đầu trang
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const userIcon = document.querySelector(".user-icon");
+  const userMenu = document.querySelector(".user-menu");
+
+  userIcon.addEventListener("click", function (event) {
+    event.stopPropagation(); // Ngăn chặn sự kiện click lan ra ngoài
+    userMenu.style.display =
+      userMenu.style.display === "block" ? "none" : "block";
+  });
+
+  // Ẩn menu khi click ra ngoài
+  document.addEventListener("click", function () {
+    userMenu.style.display = "none";
+  });
+
+  // Ngăn menu bị ẩn khi click vào chính nó
+  userMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+});

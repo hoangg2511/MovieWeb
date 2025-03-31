@@ -1,0 +1,151 @@
+body {
+  position: relative;
+  background-image: url("./img/background/background_sign_up_in.png");
+  background-color: #222;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  text-align: center;
+}
+
+/* Tiêu đề form */
+.container h2 {
+  margin-bottom: 20px;
+}
+
+/* Nhãn và input */
+.container p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* Phần checkbox và link */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Phần chọn giới tính */
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.gender-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gender-group input {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Nút button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #b20710;
+}
+
+/* Phần liên kết */
+.text-small {
+  font-size: 14px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung */
+  align-items: center;
+  width: 100%; /* Đảm bảo căn giữa trong container */
+}
+
+.link {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+.btn-signin a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
