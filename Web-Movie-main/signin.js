@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const password = document.getElementById("password").value;
 
       if (email && password.length >= 8) {
-        window.location.href = "/Web-Movie-main/index.html";
+        window.location.href = "/Web-Movie-main/home-movieList.html";
       } else {
         alert(
           "Please enter a valid email and password (at least 8 characters)."

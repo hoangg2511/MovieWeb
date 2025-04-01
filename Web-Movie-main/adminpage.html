@@ -58,79 +58,7 @@
             <!-- Page Content -->
             <main class="page-content">
                 <!-- Dashboard Tab -->
-                <!-- <div class="tab-content active" id="dashboard">
-                    <div class="page-header">
-                        <h1>Dashboard Overview</h1>
-                        <button class="primary-button">
-                            <i data-lucide="plus"></i> Add New Movie
-                        </button>
-                    </div>
 
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-header">
-                                <div class="stat-icon">
-                                    <i data-lucide="play-circle"></i>
-                                </div>
-                                <span class="trend up">+12%</span>
-                            </div>
-                            <h3>Total Views</h3>
-                            <span class="stat-value">2.4M</span>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-header">
-                                <div class="stat-icon">
-                                    <i data-lucide="users"></i>
-                                </div>
-                                <span class="trend up">+8%</span>
-                            </div>
-                            <h3>Active Users</h3>
-                            <span class="stat-value">1.8M</span>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-header">
-                                <div class="stat-icon">
-                                    <i data-lucide="dollar-sign"></i>
-                                </div>
-                                <span class="trend down">-3%</span>
-                            </div>
-                            <h3>Monthly Revenue</h3>
-                            <span class="stat-value">$12.4M</span>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-header">
-                                <div class="stat-icon">
-                                    <i data-lucide="calendar"></i>
-                                </div>
-                                <span class="trend up">+5%</span>
-                            </div>
-                            <h3>New Releases</h3>
-                            <span class="stat-value">245</span>
-                        </div>
-                    </div>
-
-                    <div class="dashboard-grid">
-                        <div class="card trending-movies">
-                            <div class="card-header">
-                                <h2>Trending Movies</h2>
-                                <button class="icon-button">
-                                    <i data-lucide="more-vertical"></i>
-                                </button>
-                            </div>
-                            <div class="movie-list" id="trendingMovies"></div>
-                        </div>
-
-                        <div class="card recent-users">
-                            <div class="card-header">
-                                <h2>Recent Users</h2>
-                                <button class="icon-button">
-                                    <i data-lucide="more-vertical"></i>
-                                </button>
-                            </div>
-                            <div class="user-list" id="recentUsers"></div>
-                        </div>
-                    </div>
-                </div> -->
                 <div id="dashboard" class="tab-content active">
                     <div class="dashboard-header">
                         <h2>Dashboard Overview</h2>
@@ -163,19 +91,20 @@
                                 <img src="/Web-Movie-main/image/Background1-TanBenThuongHai.png" alt="Inception">
                                 <h3>Inception</h3>
                                 <p>2.4M views</p>
-                                <p>4.8</p>
+                                <p>4.8⭐</p>
+
                             </div>
                             <div class="movie-card">
                                 <img src="/Web-Movie-main/image/Background_LanTron.png" alt="The Dark Knight">
                                 <h3>The Dark Knight</h3>
                                 <p>3.1M views</p>
-                                <p>4.9</p>
+                                <p>4.9⭐</p>
                             </div>
                             <div class="movie-card">
                                 <img src="/Web-Movie-main/image/BackGround1-HocKySinhTu.png" alt="Interstellar">
                                 <h3>Interstellar</h3>
                                 <p>1.8M views</p>
-                                <p>4.7</p>
+                                <p>4.7⭐</p>
                             </div>
                         </div>
                     </div>
@@ -226,7 +155,7 @@
                                     <td class="movie-poster"><img
                                             src="/Web-Movie-main/image/BackGround1-HocKySinhTu.png" alt="Inception">
                                     </td>
-                                    <td>Inception</td>
+                                    <td>Học kỳ sinh tử</td>
                                     <td>Sci-Fi</td>
                                     <td>2.4M</td>
                                     <td>⭐ 4.8</td>
@@ -238,8 +167,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="movie-poster"><img src="darkknight.jpg" alt="The Dark Knight"></td>
-                                    <td>The Dark Knight</td>
+                                    <td class="movie-poster"><img src="./image/Background_LanTron.png"
+                                            alt="The Dark Knight"></td>
+                                    <td>Lẩn trốn</td>
                                     <td>Action</td>
                                     <td>3.1M</td>
                                     <td>⭐ 4.9</td>
@@ -250,8 +180,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="movie-poster"><img src="interstellar.jpg" alt="Interstellar"></td>
-                                    <td>Interstellar</td>
+                                    <td class="movie-poster"><img src="./image/BackGround1-TuongPhatMaAm.png"
+                                            alt="Interstellar"></td>
+                                    <td>Tượng phật ma ám</td>
                                     <td>Sci-Fi</td>
                                     <td>1.8M</td>
                                     <td>⭐ 4.7</td>
@@ -289,7 +220,8 @@
 
                         <div class="user-grid">
                             <div class="user-card">
-                                <img src="sarah.jpg" alt="Sarah Wilson" class="avatar">
+                                <img src="./image/8bd7c36a9bad4d49068b1db09eac23319c51d73d8a013d9a89c3fcffc2f25bd2.png"
+                                    alt="Sarah Wilson" class="avatar">
                                 <div class="user-info">
                                     <h3>Sarah Wilson</h3>
                                     <p><i data-lucide="mail"></i> sarah.w@example.com</p>
@@ -301,7 +233,8 @@
                             </div>
 
                             <div class="user-card">
-                                <img src="michael.jpg" alt="Michael Chen" class="avatar">
+                                <img src="./image/74e2655feb265b7b9f72f54ce3ee6305.jpg" alt="Michael Chen"
+                                    class="avatar">
                                 <div class="user-info">
                                     <h3>Michael Chen</h3>
                                     <p><i data-lucide="mail"></i> michael.c@example.com</p>
@@ -313,7 +246,8 @@
                             </div>
 
                             <div class="user-card">
-                                <img src="emma.jpg" alt="Emma Thompson" class="avatar">
+                                <img src="./image/9f87b33f8059908997ea8f94cc0c03d33eebf2fe05256840ba0c7f89f626594d.png"
+                                    alt="Emma Thompson" class="avatar">
                                 <div class="user-info">
                                     <h3>Emma Thompson</h3>
                                     <p><i data-lucide="mail"></i> emma.t@example.com</p>
@@ -322,6 +256,94 @@
                                     <span class="join-date">Joined 1/28/2024</span>
                                 </div>
                                 <button class="more-options"><i data-lucide="more-vertical"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Analyst -->
+                <div id="analytics" class="tab-content">
+                    <div class="analytics-header">
+                        <h2>Analytics</h2>
+                        <select class="filter-dropdown">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>This month</option>
+                        </select>
+                    </div>
+                    <div class="analytics-content">
+                        <div class="viewing-trends">
+                            <h3>Viewing Trends</h3>
+
+                            <div class="chart">
+                                <div class="bar" style="height: 250px;"></div>
+                                <div class="bar" style="height: 200px;"></div>
+                                <div class="bar" style="height: 280px;"></div>
+                                <div class="bar" style="height: 250px;"></div>
+                                <div class="bar" style="height: 220px;"></div>
+                                <div class="bar" style="height: 180px;"></div>
+                                <div class="bar" style="height: 230px;"></div>
+                                <div class="day-labels">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                    <span>Sat</span>
+                                    <span>Sun</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-genres">
+                            <h3>Popular Genres</h3>
+                            <br>
+                            <div class="genre-list">
+                                <div class="genre-item">
+                                    <span>Action</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 35%;"></div>
+                                    </div>
+                                    <span>35%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Drama</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 28%;"></div>
+                                    </div>
+
+                                    <span>28%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Comedy</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 20%;"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Sci-Fi</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 17%;"></div>
+                                    </div>
+
+                                    <span>17%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-overview">
+                        <h3>Revenue Overview</h3>
+                        <div class="revenue-stats">
+                            <div class="revenue-card">
+                                <h4>Total Revenue</h4>
+                                <p>$124,563.00 <span class="increase">+12.5%</span></p>
+                            </div>
+                            <div class="revenue-card">
+                                <h4>Subscription Revenue</h4>
+                                <p>$98,452.00 <span class="increase">+8.3%</span></p>
+                            </div>
+                            <div class="revenue-card">
+                                <h4>Ad Revenue</h4>
+                                <p>$26,111.00 <span class="increase">+15.7%</span></p>
                             </div>
                         </div>
                     </div>

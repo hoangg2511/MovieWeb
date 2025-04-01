@@ -809,8 +809,8 @@ body {
   margin-left: 10px;
 }
 .movie-poster {
-  height: 50px;
   width: 50px;
+  height: 50px;
 }
 .user-grid {
   display: grid;
@@ -1022,4 +1022,157 @@ body {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+/* analyst */
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown {
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.analytics-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-genres {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  height: 200px; /* Chiều cao cố định cho biểu đồ */
+  /* Biểu đồ sẽ được thêm vào bằng JavaScript */
+}
+
+.genre-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genre-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.genre-bar-container {
+  display: block;
+  flex-grow: 1;
+  background-color: #f0f0f0; /* Màu nền xám nhạt */
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 10px; /* Thêm khoảng cách giữa thanh và phần trăm */
+}
+.genre-bar {
+  height: 10px;
+  background-color: red;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.genre-item span:last-child {
+  min-width: 30px; /* Đảm bảo phần trăm có đủ không gian */
+  text-align: right;
+}
+.genre-item:nth-child(1) .genre-bar {
+  width: 35%;
+}
+.genre-item:nth-child(2) .genre-bar {
+  width: 28%;
+}
+.genre-item:nth-child(3) .genre-bar {
+  width: 20%;
+}
+.genre-item:nth-child(4) .genre-bar {
+  width: 17%;
+}
+.revenue-overview {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.revenue-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.revenue-card {
+  text-align: center;
+}
+
+.increase {
+  color: green;
+}
+.viewing-trends {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 350px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.chart .bar {
+  width: 30px;
+  background-color: #f9caca; /* Màu hồng nhạt */
+  margin: 0 5px;
+  border-radius: 5px 5px 0 0; /* Bo tròn góc trên */
+}
+
+/* Thêm các cột giả định để hiển thị biểu đồ */
+.chart .bar:nth-child(1) {
+  height: 2000px;
+}
+.chart .bar:nth-child(2) {
+  height: 100px;
+}
+.chart .bar:nth-child(3) {
+  height: 70px;
+}
+.chart .bar:nth-child(4) {
+  height: 150px;
+}
+.chart .bar:nth-child(5) {
+  height: 120px;
+}
+.chart .bar:nth-child(6) {
+  height: 80px;
+}
+.chart .bar:nth-child(7) {
+  height: 130px;
+}
+
+.chart .day-labels {
+  position: absolute;
+  bottom: -20px; /* Đặt nhãn ngày ở dưới biểu đồ */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
