@@ -53,6 +53,26 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 50) {
     navbar.style.background = "rgba(0, 0, 0, 1)"; // Đậm dần khi cuộn xuống
   } else {
-    navbar.style.background = "rgba(0, 0, 0, 0.26)"; // Trong suốt khi ở đầu trang
+    navbar.style.background = "rgba(0, 0, 0, 0.5)"; // Trong suốt khi ở đầu trang
   }
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const userIcon = document.getElementById("userIcon");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  userIcon.addEventListener("click", function (event) {
+    event.stopPropagation(); // Ngăn chặn sự kiện click lan ra ngoài
+    dropdownMenu.style.display =
+      dropdownMenu.style.display === "block" ? "none" : "block";
+  });
+
+  // Ẩn menu khi click ra ngoài
+  document.addEventListener("click", function () {
+    dropdownMenu.style.display = "none";
+  });
+
+  // Ngăn menu đóng khi click vào chính nó
+  dropdownMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
 });

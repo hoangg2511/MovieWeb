@@ -1,97 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoviePortal</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="Movie-details-rental.css">
+    <link rel="stylesheet" href="style.css">
     <script src="data-rental.js"></script>
+    <script src="main.js"></script>
     <script src="script-rental.js"></script>
-</head> 
+</head>
+
 <body>
-        <!-- Video Player Section -->
-        <div class="video-container">
-            <div id="video-overlay" class="video-overlay">
-                <button id="play-button" class="play-button">
-                    <svg xmlns="" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-                </button>
-            </div>
-            <div id="video-player"></div>
-        </div>
+    <header>
+        <div class="logo">
+            <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
 
-        <!-- Movie Details -->
-        <div class="container">
-            <div class="movie-details">
-                <div class="movie-info">
-                    <h1 id="movie-title"></h1>
-                    <div class="movie-meta">
-                        <div class="rating">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                            </svg>
-                            <span id="movie-rating"></span>
-                        </div>
-                        <span class="separator">|</span>
-                        <span id="movie-duration"></span>
-                        <span class="separator">|</span>
-                        <span id="movie-year"></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+                <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+                <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
+                <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
+                <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for">
+            </div>
+            <div class="icons">
+                <img src="./image/icons8-notification-30.png" alt="">
+
+            </div>
+            <div class="icons user-icon">
+                <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <table>
+                        <tr>
+                            <td><a href="./adminpage.html">Profile</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Settings</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./signin.html">Logout</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Video Player Section -->
+    <div class="video-container">
+        <div id="video-overlay" class="video-overlay">
+            <button id="play-button" class="play-button">
+                <svg xmlns="" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="10 8 16 12 10 16 10 8" />
+                </svg>
+            </button>
+        </div>
+        <div id="video-player"></div>
+    </div>
+
+    <!-- Movie Details -->
+    <div class="container">
+        <div class="movie-details">
+            <div class="movie-info">
+                <h1 id="movie-title"></h1>
+                <div class="movie-meta">
+                    <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <span id="movie-rating"></span>
                     </div>
-                    <p class="synopsis" id="movie-synopsis"></p>
-                    <div class="movie-details-grid">
-                        <div>
-                            <h3>Director</h3>
-                            <p id="movie-director"></p>
-                        </div>
-                        <div>
-                            <h3>Cast</h3>
-                            <p id="movie-cast"></p>
-                        </div>
-                        <div>
-                            <h3>Genre</h3>
-                            <p id="movie-genre"></p>
-                        </div>
-                        <div>
-                            <h3>Production</h3>
-                            <p id="movie-production"></p>
-                        </div>
+                    <span class="separator">|</span>
+                    <span id="movie-duration"></span>
+                    <span class="separator">|</span>
+                    <span id="movie-year"></span>
+                </div>
+                <p class="synopsis" id="movie-synopsis"></p>
+                <div class="movie-details-grid">
+                    <div>
+                        <h3>Director</h3>
+                        <p id="movie-director"></p>
+                    </div>
+                    <div>
+                        <h3>Cast</h3>
+                        <p id="movie-cast"></p>
+                    </div>
+                    <div>
+                        <h3>Genre</h3>
+                        <p id="movie-genre"></p>
+                    </div>
+                    <div>
+                        <h3>Production</h3>
+                        <p id="movie-production"></p>
                     </div>
                 </div>
-                <div class="movie-poster">
-                    <img id="movie-poster" src="" alt="Movie Poster">
-                </div>
+            </div>
+            <div class="movie-poster">
+                <img id="movie-poster" src="" alt="Movie Poster">
             </div>
         </div>
+    </div>
 
-            <!-- Related Movies Slider -->
-            <div class="slider-section">
-                <h2>Related Movies</h2>
-                <div class="swiper related-movies">
-                    <div class="swiper-wrapper">
-                        <!-- Slides will be populated by JavaScript -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+    <!-- Related Movies Slider -->
+    <div class="slider-section">
+        <h2>Related Movies</h2>
+        <div class="swiper related-movies">
+            <div class="swiper-wrapper">
+                <!-- Slides will be populated by JavaScript -->
             </div>
-
-            <!-- Recommended Movies Slider -->
-            <div class="slider-section">
-                <h2>Recommended Movies</h2>
-                <div class="swiper recommended-movies">
-                    <div class="swiper-wrapper">
-                        <!-- Slides will be populated by JavaScript -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
+    </div>
+
+    <!-- Recommended Movies Slider -->
+    <div class="slider-section">
+        <h2>Recommended Movies</h2>
+        <div class="swiper recommended-movies">
+            <div class="swiper-wrapper">
+                <!-- Slides will be populated by JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    </div>
     </div>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-            <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
-            <p>PlayCine</p>
-        </div>
+                <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
+                <p>PlayCine</p>
+            </div>
             <div class="footer-section">
                 <h3>GIỚI THIỆU</h3>
                 <a href="#">Quy chế sử dụng Dịch vụ</a>
@@ -105,27 +153,28 @@
                 <a href="#">https://CinePlay.vn/help</a>
             </div>
             <div class="connect">
-            <div class="footer-section">
-                <h3>TẢI ỨNG DỤNG</h3>
-                <div class="app-links">
-                    <img src="image/android-app-download-button.webp" alt="Google Play">
-                    <img src="image/ios-app-download-button.webp" alt="App Store">
+                <div class="footer-section">
+                    <h3>TẢI ỨNG DỤNG</h3>
+                    <div class="app-links">
+                        <img src="image/android-app-download-button.webp" alt="Google Play">
+                        <img src="image/ios-app-download-button.webp" alt="App Store">
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-                <div class="social-icons">
-                    <img src="image/icons8-facebook-30.png" alt="Facebook">
-                    <img src="image/icons8-instagram-30.png" alt="Instagram">
-                    <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
-                    <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
-                    <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                <div class="footer-section">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <img src="image/icons8-facebook-30.png" alt="Facebook">
+                        <img src="image/icons8-instagram-30.png" alt="Instagram">
+                        <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
+                        <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
+                        <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

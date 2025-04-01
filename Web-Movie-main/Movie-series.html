@@ -1,302 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie List</title>
-    <link rel="stylesheet" href="Movie-series.css" />
-    <script src="main.js"></script>
-    
-    <script src="/Web-Movie-main/data_series.js"></script>
-    <!-- Tải dữ liệu trước -->
-    <script src="script-series.js"></script>
-    <!-- Sau đó tải script xử lý -->
-     <!-- <script src="/Roll.js"></script> -->
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Movie-series.css" />
+  <script src="main.js"></script>
+
+  <script src="/Web-Movie-main/data_series.js"></script>
+  <!-- Tải dữ liệu trước -->
+  <script src="script-series.js"></script>
+  <!-- Sau đó tải script xử lý -->
+  <!-- <script src="/Roll.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+        <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+        <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
+        <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
+        <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="What are you looking for">
       </div>
-      <nav>
-          <ul>
-              <li><a href="/Web-Movie-main/home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
-              <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
-              <li><a href="#"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
-              <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
-              <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
-          </ul>
-          <div class="search-bar">
-              <input type="text" placeholder="What are you looking for">
-          </div>
-          <div class="icons">
-            <img src="./image/icons8-notification-30.png" alt="">
-            <img src="./image/icons8-user-30.png" alt="">        
-          </div>
-      </nav>
-  </header>
-<!-------------------------------------------------Banner--------------------------------->
-  <section class="banner">
-      <div class="slider">
-          <div class="slide slide7">
-              <div class="slide-content">
-                  <div class="slide-title">Ngọc lâu xuân</div>
-                  <div class="slide-description">Ngọc Lâu Xuân lấy bối cảnh thời Minh, kể về cuộc đời của Lâm Thiếu Xuân (Bạch Lộc), vì cha bị vu oan tham ô mà tan cửa nát nhà. Để kiếm sống, nàng học hý kịch ở gánh hát. ...</div>
-                  <div class="buttons">
-                      <button class="play-btn">▶ Play</button>
-                      <button class="info-btn">More info</button>
-                  </div>
-              </div>
-          </div>
-          <div class="slide slide8">
-              <div class="slide-content">
-                  <div class="slide-title">Công lý ngủ quên</div>
-                  <div class="slide-description">Gyeo Rye đang trải qua những tháng sống không mục đích. Làm việc tại viện dưỡng lão, anh gặp cô y tá nhiệt huyết Yeon Joo, người mang lại 'màu sắc' cho cuộc sống của anh...</div>
-                  <div class="buttons">
-                      <button class="play-btn">▶ Play</button>
-                      <button class="info-btn">More info</button>
-                  </div>
-              </div>
-          </div>
-          <div class="slide slide9">
-              <div class="slide-content">
-                  <div class="slide-title">Tứ Hải Trọng Minh</div>
-                  <div class="slide-description">Chàng trai trẻ Hứa Văn Cường đặt chân đến Thượng Hải, vô tình cứu được Trình Trình, con gái yêu của trùm xã hội đen Phùng Kính Nghiêu. Cũng lần đó, anh cùng Đinh Lực kết tình huynh đệ, sống chết có nhau....</div>
-                  <div class="buttons">
-                      <button class="play-btn">▶ Play</button>
-                      <button class="info-btn">More info</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="progress-bar">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-      </div>
-      <div class="nav-buttons">
-          <button onclick="prevSlide()">&#10094;</button>
-          <button onclick="nextSlide()">&#10095;</button>
-      </div>
-      <div class="fade">
+      <div class="icons">
+        <img src="./image/icons8-notification-30.png" alt="">
 
       </div>
+      <div class="icons user-icon">
+        <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+        <div class="dropdown-menu" id="dropdownMenu">
+          <table>
+            <tr>
+              <td><a href="./adminpage.html">Profile</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Settings</a></td>
+            </tr>
+            <tr>
+              <td><a href="./signin.html">Logout</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-------------------------------------------------Banner--------------------------------->
+  <section class="banner">
+    <div class="slider">
+      <div class="slide slide8">
+        <div class="slide-content">
+          <div class="slide-title">Ngọc lâu xuân</div>
+          <div class="slide-description">Ngọc Lâu Xuân lấy bối cảnh thời Minh, kể về cuộc đời của Lâm Thiếu Xuân (Bạch
+            Lộc), vì cha bị vu oan tham ô mà tan cửa nát nhà. Để kiếm sống, nàng học hý kịch ở gánh hát. ...</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide9">
+        <div class="slide-content">
+          <div class="slide-title">Công lý ngủ quên</div>
+          <div class="slide-description">Gyeo Rye đang trải qua những tháng sống không mục đích. Làm việc tại
+            viện dưỡng lão, anh gặp cô y tá nhiệt huyết Yeon Joo, người mang lại 'màu sắc' cho cuộc sống của
+            anh...</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide10">
+        <div class="slide-content">
+          <div class="slide-title">Tứ Hải Trọng Minh</div>
+          <div class="slide-description">Chàng trai trẻ Hứa Văn Cường đặt chân đến Thượng Hải, vô tình cứu được Trình
+            Trình, con gái yêu của trùm xã hội đen Phùng Kính Nghiêu. Cũng lần đó, anh cùng Đinh Lực kết tình huynh đệ,
+            sống chết có nhau....</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="fade">
+
+    </div>
   </section>
-    <main>
-      <section class="movie-section">
-        <div class="movie-category">
-          <h3>Phim bộ Hàn Quốc</h3>
-          <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-          <div class="movie-list">
-            <div class="movie movie-display" data-series="series1" >
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series2">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series3">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series4">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series5">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series6">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series7">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
+  <main>
+    <section class="movie-section">
+      <div class="movie-category">
+        <h3>Phim bộ Hàn Quốc</h3>
+        <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+        <div class="movie-list">
+          <div class="movie movie-display" data-series="series1">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
             </div>
           </div>
-          <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+          <div class="movie movie-display" data-series="series2">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series3">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series4">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series5">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series6">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series7">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+      </div>
+      </div>
+    </section>
+    <section class="movie-section">
+      <div class="movie-category">
+        <h3>Phim bộ Trung Quốc </h3>
+        <button class="arrow left-arrow" onclick="scrollLeft(event)">
+          ◀
+        </button>
+        <div class="movie-list">
+          <div class="movie movie-display" data-series="series9">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series8">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series14">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series10">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series11">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series12">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series13">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="series14">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right-arrow" onclick="scrollRight(event)">
+          ▶
+        </button>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
+        <p>PlayCine</p>
+      </div>
+      <div class="footer-section">
+        <h3>GIỚI THIỆU</h3>
+        <a href="#">Quy chế sử dụng Dịch vụ</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Khuyến mãi</a>
+      </div>
+      <div class="footer-section">
+        <h3>HỖ TRỢ</h3>
+        <p>1900 8675 (24/7)</p>
+        <p>play@galaxy.com.vn</p>
+        <a href="#">https://galaxyplay.vn/help</a>
+      </div>
+      <div class="connect">
+        <div class="footer-section">
+          <h3>TẢI ỨNG DỤNG</h3>
+          <div class="app-links">
+            <img src="image/android-app-download-button.webp" alt="Google Play">
+            <img src="image/ios-app-download-button.webp" alt="App Store">
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <div class="social-icons">
+            <img src="image/icons8-facebook-30.png" alt="Facebook">
+            <img src="image/icons8-instagram-30.png" alt="Instagram">
+            <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
+            <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
+            <img src="image/iconappblackzalo.jpg" alt="Zalo">
+          </div>
         </div>
       </div>
-      </section>
-      <section class="movie-section">
-        <div class="movie-category">
-          <h3>Phim bộ Trung Quốc  </h3>
-          <button class="arrow left-arrow" onclick="scrollLeft(event)">
-            ◀
-          </button>
-          <div class="movie-list">
-            <div class="movie movie-display" data-series="series9" >
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series8">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series14">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series10">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series11">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series12">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series13">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-            <div class="movie movie-display" data-series="series14">
-              <div class="movie-bg"></div>
-              <div class="movie-info">
-                <h2 class="movie-title"></h2>
-                <p>
-                  <strong>Thể loại:</strong>
-                  <span class="movie-categories"></span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <button class="arrow right-arrow" onclick="scrollRight(event)">
-            ▶
-          </button>
-        </div>
-      </section>
-      
-      
-    </main>
-    <footer>
-      <div class="footer-container">
-          <div class="footer-logo">
-          <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
-          <p>PlayCine</p>
-      </div>
-          <div class="footer-section">
-              <h3>GIỚI THIỆU</h3>
-              <a href="#">Quy chế sử dụng Dịch vụ</a>
-              <a href="#">Chính sách bảo mật</a>
-              <a href="#">Khuyến mãi</a>
-          </div>
-          <div class="footer-section">
-              <h3>HỖ TRỢ</h3>
-              <p>1900 8675 (24/7)</p>
-              <p>play@galaxy.com.vn</p>
-              <a href="#">https://galaxyplay.vn/help</a>
-          </div>
-          <div class="connect">
-          <div class="footer-section">
-              <h3>TẢI ỨNG DỤNG</h3>
-              <div class="app-links">
-                  <img src="image/android-app-download-button.webp" alt="Google Play">
-                  <img src="image/ios-app-download-button.webp" alt="App Store">
-              </div>
-          </div>
-          <div class="footer-section">
-              <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-              <div class="social-icons">
-                  <img src="image/icons8-facebook-30.png" alt="Facebook">
-                  <img src="image/icons8-instagram-30.png" alt="Instagram">
-                  <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
-                  <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
-                  <img src="image/iconappblackzalo.jpg" alt="Zalo">
-              </div>
-          </div>
-          </div>
-      </div>
+    </div>
   </footer>
-  </body>
+</body>
+
 </html>

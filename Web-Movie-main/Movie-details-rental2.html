@@ -7,11 +7,51 @@
     <title>MoviePortal</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="Movie-details-rental.css">
+    <link rel="stylesheet" href="style.css">
     <script src="data-rental2.js"></script>
+    <script src="main.js"></script>
     <script src="script-rental2.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+                <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+                <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
+                <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
+                <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for">
+            </div>
+            <div class="icons">
+                <img src="./image/icons8-notification-30.png" alt="">
+
+            </div>
+            <div class="icons user-icon">
+                <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <table>
+                        <tr>
+                            <td><a href="./adminpage.html">Profile</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Settings</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./signin.html">Logout</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Video Player Section -->
     <div class="video-container">
         <div id="video-overlay" class="video-overlay">

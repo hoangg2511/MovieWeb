@@ -2,345 +2,327 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Movie-series.css" />
-    <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Movie-series.css" />
+  <script src="main.js"></script>
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
 
-    <script src="data-rental.js"></script>
-    <!-- Tải dữ liệu trước -->
-    <script src="script-rental.js"></script>
-    <title>Rental Movie</title>
+  <script src="data-rental.js"></script>
+  <!-- Tải dữ liệu trước -->
+  <script src="script-rental.js"></script>
+  <title>Rental Movie</title>
 
 </head>
 
 
 <body>
-    <!------------------------------------------------------------------Menu-------------------------------------------------->
-    <header>
-        <div class="logo">
-          <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+  <!------------------------------------------------------------------Menu-------------------------------------------------->
+  <header>
+    <div class="logo">
+      <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+        <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+        <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
+        <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
+        <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="What are you looking for">
+      </div>
+      <div class="icons">
+        <img src="./image/icons8-notification-30.png" alt="">
+
+      </div>
+      <div class="icons user-icon">
+        <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+        <div class="dropdown-menu" id="dropdownMenu">
+          <table>
+            <tr>
+              <td><a href="./adminpage.html">Profile</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Settings</a></td>
+            </tr>
+            <tr>
+              <td><a href="./signin.html">Logout</a></td>
+            </tr>
+          </table>
         </div>
-        <nav>
-            <ul>
-                <li><a href="home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
-                <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
-                <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
-                <li><a href="#"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
-                <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
-            </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="What are you looking for">
-            </div>
-            <div class="icons">
-              <img src="./image/icons8-notification-30.png" alt="">
-              <img src="./image/icons8-user-30.png" alt="">        
-            </div>
-        </nav>
-    </header>
-<!----------------------------------------------------------------------Banner----------------------------------------------------------->
-<section class="banner">    
-  <div class="slider">
-      <div class="slide slide1">
-          <div class="slide-content">
-              <div class="slide-title">Ghost Cat is indulgent</div>
-              <div class="slide-description">Một chú mèo tinh nghịch vô tình lạc vào thế giới phép thuật và phải tìm cách trở về nhà....</div>
-              <div class="buttons">
-                  <button class="play-btn">▶ Play</button>
-                  <button class="info-btn">More info</button>
-              </div>
-          </div>
       </div>
-      <div class="slide slide2">
-          <div class="slide-content">
-              <div class="slide-title">Blade Runner</div>
-              <div class="slide-description">Một người Blade Runner trẻ tuổi phát hiện ra một bí mật có thể thay đổi toàn bộ xã hội....</div>
-              <div class="buttons">
-                  <button class="play-btn">▶ Play</button>
-                  <button class="info-btn">More info</button>
-              </div>
+    </nav>
+  </header>
+  <!----------------------------------------------------------------------Banner----------------------------------------------------------->
+  <section class="banner">
+    <div class="slider">
+      <div class="slide slide5">
+        <div class="slide-content">
+          <div class="slide-title">Ghost Cat is indulgent</div>
+          <div class="slide-description">Một chú mèo tinh nghịch vô tình lạc vào thế giới phép thuật và phải tìm cách
+            trở về nhà....</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
           </div>
+        </div>
       </div>
-      <div class="slide slide3">
-          <div class="slide-content">
-              <div class="slide-title">Conan - Kho Báu Dưới Đáy Đại Dương</div>
-              <div class="slide-description">Conan và nhóm bạn khám phá bí ẩn của một kho báu bị chôn vùi dưới đáy đại dương....</div>
-              <div class="buttons">
-                  <button class="play-btn">▶ Play</button>
-                  <button class="info-btn">More info</button>
-              </div>
+      <div class="slide slide6">
+        <div class="slide-content">
+          <div class="slide-title">Shin</div>
+          <div class="slide-description">Một cậu bé tinh nghịch với đầy đủ trò quậy phá và một hôm cuộc tìm thấy chú
+            khủng long...</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="progress-bar">
+      <div class="slide slide7">
+        <div class="slide-content">
+          <div class="slide-title">Conan - Kho Báu Dưới Đáy Đại Dương</div>
+          <div class="slide-description">Conan và nhóm bạn khám phá bí ẩn của một kho báu bị chôn vùi dưới đáy đại
+            dương....</div>
+          <div class="buttons">
+            <button class="play-btn">▶ Play</button>
+            <button class="info-btn">More info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-bar">
       <div class="dot active"></div>
       <div class="dot"></div>
       <div class="dot"></div>
-  </div>
-  <div class="nav-buttons">
+    </div>
+    <div class="nav-buttons">
       <button onclick="prevSlide()">&#10094;</button>
       <button onclick="nextSlide()">&#10095;</button>
-  </div>
-  <div class="fade">
+    </div>
+    <div class="fade">
 
-  </div>
-</section>
-    <!-------------------------------------------------------------------Movie-List-------------------------------------------------------->
-</section>
-<main>
-  <section class="movie-section">
-    <div class="movie-category">
-      <h3>Top Rates</h3>
-      <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-      <div class="movie-list">
-        <div class="movie movie-display" data-series="rental1" >
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental2">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental3">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental4">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental5">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental6">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental7">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
     </div>
-  </div>
   </section>
-  <section class="movie-section">
-    <div class="movie-category">
-      <h3>Top Rates</h3>
-      <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-      <div class="movie-list">
-        <div class="movie movie-display" data-series="rental8" >
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental9">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental10">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental11">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental12">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental13">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        <div class="movie movie-display" data-series="rental14">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
-    </div>
-  </div>
+  <!-------------------------------------------------------------------Movie-List-------------------------------------------------------->
   </section>
-  <section class="movie-section">
-    <div class="movie-category">
-      <h3>Top Rates</h3>
-      <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-      <div class="movie-list">
-        <div class="movie movie-display" data-series="rental15" >
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
+  <main>
+    <section class="movie-section">
+      <div class="movie-category">
+        <h3>Top Rates</h3>
+        <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+        <div class="movie-list">
+          <div class="movie movie-display" data-series="rental1">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental2">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental3">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental4">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental5">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental6">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental7">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="movie movie-display" data-series="rental16">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
+        <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+      </div>
+      </div>
+    </section>
+    <section class="movie-section">
+      <div class="movie-category">
+        <h3>Top Rates</h3>
+        <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+        <div class="movie-list">
+          <div class="movie movie-display" data-series="rental8">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental9">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental10">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental11">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental12">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental13">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental14">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="movie movie-display" data-series="rental17">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
+        <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+      </div>
+      </div>
+    </section>
+    <section class="movie-section">
+      <div class="movie-category">
+        <h3>Top Rates</h3>
+        <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+        <div class="movie-list">
+          <div class="movie movie-display" data-series="rental15">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
           </div>
+          <div class="movie movie-display" data-series="rental16">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental17">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+          <div class="movie movie-display" data-series="rental18">
+            <div class="movie-bg"></div>
+            <div class="movie-info">
+              <h2 class="movie-title"></h2>
+              <p>
+                <strong>Thể loại:</strong>
+                <span class="movie-categories"></span>
+              </p>
+            </div>
+          </div>
+
         </div>
-        <div class="movie movie-display" data-series="rental18">
-          <div class="movie-bg"></div>
-          <div class="movie-info">
-            <h2 class="movie-title"></h2>
-            <p>
-              <strong>Thể loại:</strong>
-              <span class="movie-categories"></span>
-            </p>
-          </div>
-        </div>
-        
-      </div>
-      <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
-    </div>
-  </div>
-  </section>
-</main>
-<footer>
-  <div class="footer-container">
-      <div class="footer-logo">
-      <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
-      <p>PlayCine</p>
-  </div>
-      <div class="footer-section">
-          <h3>GIỚI THIỆU</h3>
-          <a href="#">Quy chế sử dụng Dịch vụ</a>
-          <a href="#">Chính sách bảo mật</a>
-          <a href="#">Khuyến mãi</a>
-      </div>
-      <div class="footer-section">
-        <h3>HỖ TRỢ</h3>
-        <p>1900 8675 (24/7)</p>
-        <p>PlayCine@gmail.com.vn</p>
-        <a href="#">https://CinePlay.vn/help</a>
-      </div>
-      <div class="connect">
-      <div class="footer-section">
-          <h3>TẢI ỨNG DỤNG</h3>
-          <div class="app-links">
-              <img src="image/android-app-download-button.webp" alt="Google Play">
-              <img src="image/ios-app-download-button.webp" alt="App Store">
-          </div>
-      </div>
-      <div class="footer-section">
-          <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-          <div class="social-icons">
-              <img src="image/icons8-facebook-30.png" alt="Facebook">
-              <img src="image/icons8-instagram-30.png" alt="Instagram">
-              <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
-              <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
-              <img src="image/iconappblackzalo.jpg" alt="Zalo">
-          </div>
+        <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
       </div>
       </div>
-  </div>
-</footer>
+    </section>
+  </main>
+
 </body>
 
 </html>

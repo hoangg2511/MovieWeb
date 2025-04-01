@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Tiết Phim</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="details-series.css">
+    <script src="main.js"></script>
     <script src="data_series.js"></script>
     <script defer src="details-series.js"></script>
-    
+
 </head>
+
 <body>
-   
-      <div class="movie-background"></div>
+    <header>
+        <div class="logo">
+            <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+                <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+                <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
+                <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
+                <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for">
+            </div>
+            <div class="icons">
+                <img src="./image/icons8-notification-30.png" alt="">
+
+            </div>
+            <div class="icons user-icon">
+                <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <table>
+                        <tr>
+                            <td><a href="./adminpage.html">Profile</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Settings</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./signin.html">Logout</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="movie-background"></div>
     <div class="movie-container">
         <div class="movie-content">
             <h1 class="movie-title"></h1>
@@ -27,9 +68,9 @@
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-            <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
-            <p>PlayCine</p>
-        </div>
+                <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
+                <p>PlayCine</p>
+            </div>
             <div class="footer-section">
                 <h3>GIỚI THIỆU</h3>
                 <a href="#">Quy chế sử dụng Dịch vụ</a>
@@ -43,25 +84,26 @@
                 <a href="#">https://CinePlay.vn/help</a>
             </div>
             <div class="connect">
-            <div class="footer-section">
-                <h3>TẢI ỨNG DỤNG</h3>
-                <div class="app-links">
-                    <img src="image/android-app-download-button.webp" alt="Google Play">
-                    <img src="image/ios-app-download-button.webp" alt="App Store">
+                <div class="footer-section">
+                    <h3>TẢI ỨNG DỤNG</h3>
+                    <div class="app-links">
+                        <img src="image/android-app-download-button.webp" alt="Google Play">
+                        <img src="image/ios-app-download-button.webp" alt="App Store">
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-                <div class="social-icons">
-                    <img src="image/icons8-facebook-30.png" alt="Facebook">
-                    <img src="image/icons8-instagram-30.png" alt="Instagram">
-                    <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
-                    <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
-                    <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                <div class="footer-section">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <img src="image/icons8-facebook-30.png" alt="Facebook">
+                        <img src="image/icons8-instagram-30.png" alt="Instagram">
+                        <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
+                        <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
+                        <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

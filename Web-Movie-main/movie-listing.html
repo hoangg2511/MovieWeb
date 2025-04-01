@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-        <link rel="stylesheet" href="Movie-series.css">
+    <link rel="stylesheet" href="Movie-series.css">
     <title>Movie Listing</title>
 
 </head>
@@ -17,23 +17,42 @@
     <header>
         <div class="logo">
             <a href="./Index.html"><img src="./image/Logo1.png" alt="PLAYCINE Logo"></a>
+
         </div>
         <nav>
             <ul>
-                <li><a href="home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
-                <li><a href="#"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
+                <li><a href="./home-movieList.html"><img src="home-icon.png" alt=""> Trang chủ</a></li>
+                <li><a href="movie-listing.html"><img src="tv-icon.png" alt=""> Kho Phim</a></li>
                 <li><a href="/Web-Movie-main/Movie-series.html"><img src="sports-icon.png" alt=""> Phim Bộ</a></li>
                 <li><a href="rental-movie.html"><img src="kids-icon.png" alt=""> Thiếu nhi</a></li>
                 <li><a href="theaterMovies-list.html"><img src="kids-icon.png" alt=""> Phim chiếu rạp</a></li>
             </ul>
-
+            <div style="opacity: 0;" class="search-bar">
+                <input type="text" placeholder="What are you looking for">
+            </div>
             <div class="icons">
-     <img src="./image/icons8-notification-30.png" alt="">
-     <img src="./image/icons8-user-30.png" alt="">           
+                <img src="./image/icons8-notification-30.png" alt="">
+
+            </div>
+            <div class="icons user-icon">
+                <img src="./image/icons8-user-30.png" alt="" id="userIcon">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <table>
+                        <tr>
+                            <td><a href="./adminpage.html">Profile</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Settings</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./signin.html">Logout</a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </nav>
     </header>
-<!-----------------------------------------------Search bar-------------------------------------------->
+    <!-----------------------------------------------Search bar-------------------------------------------->
     <section class="banner">
         <div class="slide">
             <img src="/Web-Movie-main/img/banner/banner_4.jpg" alt="">
@@ -66,14 +85,14 @@
             <div class="movie-category">
                 <h3>Top Rates</h3>
                 <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-                    <div class="movie-list">
-                        <div class="movie1">
-                            <img src="img/trending_now/trending_now_1.jpg" alt="Movie 1">
-                            <div class="movie-overlay">
-                                <h3>Công Lý "Ngủ Quên"</h3>
-                                <p>Tóm tắt phim...</p>
-                            </div>
+                <div class="movie-list">
+                    <div class="movie1">
+                        <img src="img/trending_now/trending_now_1.jpg" alt="Movie 1">
+                        <div class="movie-overlay">
+                            <h3>Công Lý "Ngủ Quên"</h3>
+                            <p>Tóm tắt phim...</p>
                         </div>
+                    </div>
                     <div class="movie1">
                         <img src="./img/trending_now/trending_now_2.png" alt="Movie 2">
                         <div class="movie-overlay">
@@ -219,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+                <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
         </section>
         <section class="movie-section">
@@ -388,101 +407,101 @@
                 <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
             </div>
         </section>
-    <!----------------------------------------------Popular--------------------------------->
-            <div class="movie-category">
-                <h3>Popular</h3>
-                <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
-                <div class="movie-list">
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_1.png" alt="Movie 1">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_2.png" alt="Movie 2">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_3.png" alt="Movie 3">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_4.png" alt="Movie 4">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_5.png" alt="Movie 5">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_1.png" alt="Movie 6">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_2.png" alt="Movie 7">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_3.png" alt="Movie 8">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_4.png" alt="Movie 9">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
-
-                    </div>
-                    <div class="movie3">
-                        <img src="./img/thriller/thriller_5.png" alt="Movie 10">
-                        <div class="movie-overlay">
-                            <h3>Công Lý "Ngủ Quên"</h3>
-                            <p>Tóm tắt phim...</p>
-                        </div>
+        <!----------------------------------------------Popular--------------------------------->
+        <div class="movie-category">
+            <h3>Popular</h3>
+            <button class="arrow left-arrow" onclick="scrollLeft(event)">◀</button>
+            <div class="movie-list">
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_1.png" alt="Movie 1">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
                     </div>
                 </div>
-                <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_2.png" alt="Movie 2">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_3.png" alt="Movie 3">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_4.png" alt="Movie 4">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_5.png" alt="Movie 5">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_1.png" alt="Movie 6">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_2.png" alt="Movie 7">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_3.png" alt="Movie 8">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_4.png" alt="Movie 9">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+
+                </div>
+                <div class="movie3">
+                    <img src="./img/thriller/thriller_5.png" alt="Movie 10">
+                    <div class="movie-overlay">
+                        <h3>Công Lý "Ngủ Quên"</h3>
+                        <p>Tóm tắt phim...</p>
+                    </div>
+                </div>
             </div>
-        
+            <button class="arrow right-arrow" onclick="scrollRight(event)">▶</button>
+        </div>
+
 
     </main>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-            <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
-            <p>PlayCine</p>
-        </div>
+                <img src="/Web-Movie-main/image/Logo1.png" alt="Logo">
+                <p>PlayCine</p>
+            </div>
             <div class="footer-section">
                 <h3>GIỚI THIỆU</h3>
                 <a href="#">Quy chế sử dụng Dịch vụ</a>
@@ -496,23 +515,23 @@
                 <a href="#">https://CinePlay.vn/help</a>
             </div>
             <div class="connect">
-            <div class="footer-section">
-                <h3>TẢI ỨNG DỤNG</h3>
-                <div class="app-links">
-                    <img src="image/android-app-download-button.webp" alt="Google Play">
-                    <img src="image/ios-app-download-button.webp" alt="App Store">
+                <div class="footer-section">
+                    <h3>TẢI ỨNG DỤNG</h3>
+                    <div class="app-links">
+                        <img src="image/android-app-download-button.webp" alt="Google Play">
+                        <img src="image/ios-app-download-button.webp" alt="App Store">
+                    </div>
                 </div>
-            </div>
-            <div class="footer-section">
-                <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
-                <div class="social-icons">
-                    <img src="image/icons8-facebook-30.png" alt="Facebook">
-                    <img src="image/icons8-instagram-30.png" alt="Instagram">
-                    <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
-                    <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
-                    <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                <div class="footer-section">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div class="social-icons">
+                        <img src="image/icons8-facebook-30.png" alt="Facebook">
+                        <img src="image/icons8-instagram-30.png" alt="Instagram">
+                        <img src="image/icons8-youtube-logo-30.png" alt="YouTube">
+                        <img src="image/AppIcon _tiktok.jpg" alt="TikTok">
+                        <img src="image/iconappblackzalo.jpg" alt="Zalo">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </footer>
