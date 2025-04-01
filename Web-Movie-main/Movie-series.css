@@ -217,6 +217,15 @@ body {
 .slide6 {
   background-image: url("./image/PhimLe_ThieuNhi/PhimLe/background_17_TiemHanh.webp");
 }
+.slide7 {
+  background-image: url("./image/Background1-NgonLauXuan.png");
+}
+.slide8 {
+  background-image: url("./image/BackGround-CongLyNguQuen.png");
+}
+.slide9 {
+  background-image: url("./image/Background1-TuHaiTrongMinh.png");
+}
 .slide::after {
   content: "";
   position: absolute;
