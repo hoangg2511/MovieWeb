@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Admin Dashboard</title>
+    <link rel="stylesheet" href="style_admin.css">
+    <script src="https://unpkg.com/lucide@latest"></script> <!-- Load icons -->
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <i data-lucide="film" class="logo-icon"></i>
+                <span class="logo-text">MovieAdmin</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-tab="dashboard">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </button>
+                <button class="nav-item" data-tab="movies">
+                    <i data-lucide="film"></i> Movies
+                </button>
+                <button class="nav-item" data-tab="users">
+                    <i data-lucide="users"></i> Users
+                </button>
+                <button class="nav-item" data-tab="analytics">
+                    <i data-lucide="trending-up"></i> Analytics
+                </button>
+                <button class="nav-item" data-tab="settings">
+                    <i data-lucide="settings"></i> Settings
+                </button>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="search-container">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search movies, users...">
+                </div>
+                <div class="header-actions">
+                    <button class="notification-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=32&h=32"
+                        alt="Admin" class="avatar">
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main class="page-content">
+                <!-- Dashboard Tab -->
+
+                <div id="dashboard" class="tab-content active">
+                    <div class="dashboard-header">
+                        <h2>Dashboard Overview</h2>
+                        <button class="add-movie-btn">
+                            + Add New Movie
+                        </button>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h3>Total Users</h3>
+                            <p>2.4M <span class="increase">+12%</span></p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Active Subscriptions</h3>
+                            <p>1.8M <span class="decrease">-8%</span></p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Revenue</h3>
+                            <p>$12.4M <span class="increase">+15%</span></p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>New Movies</h3>
+                            <p>245 <span class="increase">+5%</span></p>
+                        </div>
+                    </div>
+                    <div class="recent-movies">
+                        <h2>Recent Movies</h2>
+                        <div class="movie-grid">
+                            <div class="movie-card">
+                                <img src="/Web-Movie-main/image/Background1-TanBenThuongHai.png" alt="Inception">
+                                <h3>Inception</h3>
+                                <p>2.4M views</p>
+                                <p>4.8⭐</p>
+
+                            </div>
+                            <div class="movie-card">
+                                <img src="/Web-Movie-main/image/Background_LanTron.png" alt="The Dark Knight">
+                                <h3>The Dark Knight</h3>
+                                <p>3.1M views</p>
+                                <p>4.9⭐</p>
+                            </div>
+                            <div class="movie-card">
+                                <img src="/Web-Movie-main/image/BackGround1-HocKySinhTu.png" alt="Interstellar">
+                                <h3>Interstellar</h3>
+                                <p>1.8M views</p>
+                                <p>4.7⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movies tab -->
+                <div class="tab-content" id="movies">
+                    <div class="page-header">
+                        <h1>Movies Management</h1>
+                        <button class="primary-button">
+                            <i data-lucide="plus"></i> Add New Movie
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <div class="filters">
+                            <div class="search-container">
+                                <i data-lucide="search"></i>
+                                <input type="text" placeholder="Search movies...">
+                            </div>
+                            <select>
+                                <option>All Genres</option>
+                                <option>Action</option>
+                                <option>Comedy</option>
+                                <option>Drama</option>
+                                <option>Sci-Fi</option>
+                            </select>
+                            <select>
+                                <option>All Status</option>
+                                <option>Published</option>
+                                <option>Draft</option>
+                                <option>Archived</option>
+                            </select>
+                        </div>
+
+                        <table class="movies-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Movie</th>
+                                    <th>Genre</th>
+                                    <th>Views</th>
+                                    <th>Rating</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="movie-poster"><img
+                                            src="/Web-Movie-main/image/BackGround1-HocKySinhTu.png" alt="Inception">
+                                    </td>
+                                    <td>Học kỳ sinh tử</td>
+                                    <td>Sci-Fi</td>
+                                    <td>2.4M</td>
+                                    <td>⭐ 4.8</td>
+                                    <td><span class="badge published">Published</span></td>
+                                    <td>
+
+                                        <button class="icon-btn">edit</button>
+                                        <button class="icon-btn">delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="movie-poster"><img src="./image/Background_LanTron.png"
+                                            alt="The Dark Knight"></td>
+                                    <td>Lẩn trốn</td>
+                                    <td>Action</td>
+                                    <td>3.1M</td>
+                                    <td>⭐ 4.9</td>
+                                    <td><span class="badge published">Published</span></td>
+                                    <td>
+                                        <button class="icon-btn">edit</button>
+                                        <button class="icon-btn">delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="movie-poster"><img src="./image/BackGround1-TuongPhatMaAm.png"
+                                            alt="Interstellar"></td>
+                                    <td>Tượng phật ma ám</td>
+                                    <td>Sci-Fi</td>
+                                    <td>1.8M</td>
+                                    <td>⭐ 4.7</td>
+                                    <td><span class="badge published">Published</span></td>
+                                    <td>
+                                        <button class="icon-btn">edit</button>
+                                        <button class="icon-btn">delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Users Tab -->
+                <div class="tab-content" id="users">
+                    <div class="page-header">
+                        <h1>User Management</h1>
+                        <button class="primary-button">
+                            <i data-lucide="plus"></i> Add New User
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <div class="filters">
+                            <div class="search-container">
+                                <i data-lucide="search"></i>
+                                <input type="text" placeholder="Search users...">
+                            </div>
+                            <select>
+                                <option>All Subscriptions</option>
+                                <option>Premium</option>
+                                <option>Basic</option>
+                            </select>
+                        </div>
+
+                        <div class="user-grid">
+                            <div class="user-card">
+                                <img src="./image/8bd7c36a9bad4d49068b1db09eac23319c51d73d8a013d9a89c3fcffc2f25bd2.png"
+                                    alt="Sarah Wilson" class="avatar">
+                                <div class="user-info">
+                                    <h3>Sarah Wilson</h3>
+                                    <p><i data-lucide="mail"></i> sarah.w@example.com</p>
+                                    <p><i data-lucide="map-pin"></i> New York, USA</p>
+                                    <span class="badge premium">Premium</span>
+                                    <span class="join-date">Joined 1/15/2024</span>
+                                </div>
+                                <button class="more-options"><i data-lucide="more-vertical"></i></button>
+                            </div>
+
+                            <div class="user-card">
+                                <img src="./image/74e2655feb265b7b9f72f54ce3ee6305.jpg" alt="Michael Chen"
+                                    class="avatar">
+                                <div class="user-info">
+                                    <h3>Michael Chen</h3>
+                                    <p><i data-lucide="mail"></i> michael.c@example.com</p>
+                                    <p><i data-lucide="map-pin"></i> Singapore</p>
+                                    <span class="badge basic">Basic</span>
+                                    <span class="join-date">Joined 2/1/2024</span>
+                                </div>
+                                <button class="more-options"><i data-lucide="more-vertical"></i></button>
+                            </div>
+
+                            <div class="user-card">
+                                <img src="./image/9f87b33f8059908997ea8f94cc0c03d33eebf2fe05256840ba0c7f89f626594d.png"
+                                    alt="Emma Thompson" class="avatar">
+                                <div class="user-info">
+                                    <h3>Emma Thompson</h3>
+                                    <p><i data-lucide="mail"></i> emma.t@example.com</p>
+                                    <p><i data-lucide="map-pin"></i> London, UK</p>
+                                    <span class="badge premium">Premium</span>
+                                    <span class="join-date">Joined 1/28/2024</span>
+                                </div>
+                                <button class="more-options"><i data-lucide="more-vertical"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Analyst -->
+                <div id="analytics" class="tab-content">
+                    <div class="analytics-header">
+                        <h2>Analytics</h2>
+                        <select class="filter-dropdown">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>This month</option>
+                        </select>
+                    </div>
+                    <div class="analytics-content">
+                        <div class="viewing-trends">
+                            <h3>Viewing Trends</h3>
+
+                            <div class="chart">
+                                <div class="bar" style="height: 250px;"></div>
+                                <div class="bar" style="height: 200px;"></div>
+                                <div class="bar" style="height: 280px;"></div>
+                                <div class="bar" style="height: 250px;"></div>
+                                <div class="bar" style="height: 220px;"></div>
+                                <div class="bar" style="height: 180px;"></div>
+                                <div class="bar" style="height: 230px;"></div>
+                                <div class="day-labels">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                    <span>Sat</span>
+                                    <span>Sun</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-genres">
+                            <h3>Popular Genres</h3>
+                            <br>
+                            <div class="genre-list">
+                                <div class="genre-item">
+                                    <span>Action</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 35%;"></div>
+                                    </div>
+                                    <span>35%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Drama</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 28%;"></div>
+                                    </div>
+
+                                    <span>28%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Comedy</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 20%;"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="genre-item">
+                                    <span>Sci-Fi</span>
+                                    <div class="genre-bar-container">
+                                        <div class="genre-bar" style="width: 17%;"></div>
+                                    </div>
+
+                                    <span>17%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-overview">
+                        <h3>Revenue Overview</h3>
+                        <div class="revenue-stats">
+                            <div class="revenue-card">
+                                <h4>Total Revenue</h4>
+                                <p>$124,563.00 <span class="increase">+12.5%</span></p>
+                            </div>
+                            <div class="revenue-card">
+                                <h4>Subscription Revenue</h4>
+                                <p>$98,452.00 <span class="increase">+8.3%</span></p>
+                            </div>
+                            <div class="revenue-card">
+                                <h4>Ad Revenue</h4>
+                                <p>$26,111.00 <span class="increase">+15.7%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Settings Tab -->
+                <div class="tab-content" id="settings">
+                    <div class="page-header">
+                        <h1>Settings</h1>
+                        <p>Manage your platform settings and preferences</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>General Settings</h2>
+
+                        <!-- Platform Information -->
+                        <div class="settings-section">
+                            <h3>Platform Information</h3>
+                            <div class="settings-row">
+                                <label>Platform Name</label>
+                                <input type="text" value="MovieAdmin">
+                                <label>Contact Email</label>
+                                <input type="email" value="support@movieadmin.com">
+                            </div>
+                        </div>
+
+                        <!-- Notification Settings -->
+                        <div class="settings-section">
+                            <h3>Notification Settings</h3>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" checked> Email notifications for new user
+                                    registrations</label>
+                                <label><input type="checkbox" checked> Push notifications for new movie uploads</label>
+                                <label><input type="checkbox" checked> Weekly analytics report</label>
+                                <label><input type="checkbox" checked> System maintenance alerts</label>
+                            </div>
+                        </div>
+
+                        <!-- Storage Settings -->
+                        <div class="settings-section">
+                            <h3>Storage Settings</h3>
+                            <label>Storage Used</label>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
+                            <p>750GB of 1TB used</p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="settings-buttons">
+                        <button class="cancel-button">Cancel</button>
+                        <button class="save-button">Save Changes</button>
+                    </div>
+                </div>
+
+                <!-- Other Tabs (Movies, Users, Analytics, Settings) follow the same pattern -->
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="admin.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>
