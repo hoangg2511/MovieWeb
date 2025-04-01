@@ -12,6 +12,9 @@ body {
     color: rgb(255, 255, 255);
     display: flex;
     height: auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Phần nội dung sẽ mở rộng để footer nằm dưới */
+    min-height: 100vh;
 }
 
 /* Định dạng Background */
@@ -28,6 +31,7 @@ body {
 
 /* Container để căn giữa nội dung */
 .movie-container {
+  flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +43,7 @@ body {
 
 /* Nội dung phim */
 .movie-content {
-    
+
     font-size: 30px;
     width: 100%;
     padding: 50px;
@@ -54,8 +58,7 @@ body {
 /* Danh sách tập phim */
 .episodes-list {
     background-color: #000000e5;
-    position: absolute; /* Đặt tập phim dưới background */
-    top: 100%; /* Đẩy xuống bên dưới */
+    position: relative; /* Đặt tập phim dưới background */
     display: flex;
     gap: 15px;
     width: auto;
@@ -102,6 +105,7 @@ body {
   /*episode*/
   /* Tổng thể danh sách tập */
 .episodes-list {
+  top:60%;
   display: grid;
   grid-template-columns: repeat(8, 1fr); /* 9 tập mỗi hàng */
   gap: 10px; /* Khoảng cách giữa các tập */
@@ -136,4 +140,61 @@ body {
   .episodes-list {
     grid-template-columns: repeat(3, 1fr); /* 3 tập mỗi hàng trên mobile */
   }
+}
+footer {
+  margin-top: 30%;
+  background-color: #111;
+  color: white;
+  padding: 30px 50px;
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section { 
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section a, .footer-section p {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.app-links img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  text-align: right;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  font-weight: bold;
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-in-up.css">
+    <script src="signin.js"></script>
+    <title>PlayCine - Sign Up</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form>
+            <p>Email</p>
+            <input type="email" id="email" placeholder="example.email@gmail.com" required>
+
+            <p>Username</p>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <p>Date of Birth</p>
+            <input type="date" id="dateofbirth" required>
+
+            <p>Password</p>
+            <input type="password" id="password" placeholder="Enter at least 8+ characters" required>
+
+            <p>Confirm Password</p>
+            <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+
+            <p>Gender</p>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+
+            <button type="submit"></a>Sign Up</button>
+        </form>
+        <p class="text-small">Already have an account? <a href="/Web-Movie-main/signin.html" class="link">Sign in</a>
+        </p>
+    </div>
+</body>
+
+</html>

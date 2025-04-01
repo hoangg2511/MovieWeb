@@ -74,8 +74,8 @@ const moviesData = {
             cast: ["Lê Hoàng", "Bảo Anh", "Trung Dũng"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "Cat Studio",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_6_MeoMa.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoMa.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_6_MeoMa.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoMa.png"
         },
         "rental7":{
             title: "Mòng Biển Manou",
@@ -87,8 +87,8 @@ const moviesData = {
             cast: ["Kate Winslet", "Willem Dafoe"],
             genre: ["Hoạt Hình", "Gia Đình"],
             production: "LUXX Studios",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_7_MongBien.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MongBien.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_7_MongBien.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MongBien.png"
         },
         "rental8":{
             title: "Mèo Béo Siêu Đẳng",
@@ -100,8 +100,8 @@ const moviesData = {
             cast: ["Tom Holland", "Emma Watson"],
             genre: ["Hoạt Hình", "Hài Hước"],
             production: "DreamWorks Animation",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_8_MeoBeo.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoBeo.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_8_MeoBeo.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoBeo.png"
         },
         "rental9":{
             title: "Cậu Bé Cá Heo",
@@ -113,8 +113,8 @@ const moviesData = {
             cast: ["Noah Jupe", "Scarlett Johansson"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "Blue Ocean Studios",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_9_CBCaHeo.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_CBCaHeo.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_9_CBCaHeo.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_CBCaHeo.png"
         },
         "rental10":{
             title: "Shin - Nhật Ký Khủng Long",
@@ -126,8 +126,8 @@ const moviesData = {
             cast: ["Shinnosuke Nohara", "Keiko Toda"],
             genre: ["Hoạt Hình", "Hài Hước"],
             production: "Toho Animation",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_10_Shin.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Shin.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_10_Shin.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Shin.png"
         },
         "rental11":{
             title: "Dino King",
@@ -139,8 +139,8 @@ const moviesData = {
             cast: ["Lee Hyung-seok", "Kim Eun-hee"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "Next Entertainment World",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_11_DinoKing.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_DinoKing.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_11_DinoKing.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_DinoKing.png"
         },
         "rental12":{
             title: "Conan - Kho Báu Dưới Đáy Đại Dương",
@@ -152,8 +152,8 @@ const moviesData = {
             cast: ["Minami Takayama", "Kappei Yamaguchi"],
             genre: ["Hoạt Hình", "Trinh Thám"],
             production: "TMS Entertainment",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_12_Conan.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Conan.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_12_Conan.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Conan.png"
         },
         "rental13":{
             title: "Pororo - Cuộc Phiêu Lưu Đến Dinh Thự Rồng",
@@ -165,8 +165,8 @@ const moviesData = {
             cast: ["Pororo", "Crong", "Eddy"],
             genre: ["Hoạt Hình", "Gia Đình"],
             production: "Iconix Entertainment",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_13_Pororo.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Pororo.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_13_Pororo.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Pororo.png"
         },
         "rental14":{
             title: "Bố Gà Siêu Đẳng",
@@ -178,8 +178,8 @@ const moviesData = {
             cast: ["Chris Pratt", "Zendaya"],
             genre: ["Hoạt Hình", "Hài Hước"],
             production: "Blue Sky Studios",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_14_BoGa.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_BoGa.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_14_BoGa.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_BoGa.png"
         },
         "rental15":{
             title: "Mèo Siêu Quậy Ở Viện Bảo Tàng",
@@ -191,8 +191,8 @@ const moviesData = {
             cast: ["Jack Black", "Jennifer Aniston"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "Universal Pictures",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_15_MeoSieuQuay.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoSieuQuay.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_15_MeoSieuQuay.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_MeoSieuQuay.png"
         },
         "rental16":{
             title: "Space Dogs",
@@ -204,8 +204,8 @@ const moviesData = {
             cast: ["Alicia Silverstone", "Sam Witwer"],
             genre: ["Hoạt Hình", "Khoa Học Viễn Tưởng"],
             production: "KinoAtis",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_16_SpaceDog.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_SpaceDog.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_16_SpaceDog.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_SpaceDog.png"
         },
         "rental17":{
             title: "Mavka: Người Gác Rừng",
@@ -217,8 +217,8 @@ const moviesData = {
             cast: ["Nataliya Denisenko", "Artem Pivovarov"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "Animagrad Animation Studio",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_18_Mavaka.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Mavaka.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_18_Mavaka.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Mavaka.png"
         },
         "rental18":{
             title: "Katak: Chú Cá Tầm Dũng Cảm",
@@ -230,8 +230,8 @@ const moviesData = {
             cast: ["Xavier Dolan", "Rick Jones"],
             genre: ["Hoạt Hình", "Phiêu Lưu"],
             production: "10th Ave Productions",
-            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_17_Katak.png",
-            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Katak.png"
+            background1: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_17_Katak.png",
+            background: "/Web-Movie-main/image/PhimLe_ThieuNhi/ThieuNhi/background_Katak.png"
         }
     };
 
