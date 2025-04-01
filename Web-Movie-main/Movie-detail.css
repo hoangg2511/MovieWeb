@@ -302,3 +302,64 @@ nav ul li a {
   transform: translateY(0);
 }
 
+footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 50px;
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section { 
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section a, .footer-section p {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.app-links img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-logo {
+  text-align: right;
+  min-width: 200px;
+}
+
+.footer-logo img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
