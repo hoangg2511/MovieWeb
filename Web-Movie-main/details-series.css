@@ -105,7 +105,7 @@ body {
   /*episode*/
   /* Tổng thể danh sách tập */
 .episodes-list {
-  top:60%;
+  top:40%;
   display: grid;
   grid-template-columns: repeat(8, 1fr); /* 9 tập mỗi hàng */
   gap: 10px; /* Khoảng cách giữa các tập */
